@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-size: 1000px;
+  background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
+  background-position: center center;
+}
+
+.paper {
+  background-image: url("https://img.freepik.com/premium-photo/colorful-party-with-balloons-white-background-with-ribbon-that-says-happy-birthday_943617-56858.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725408000&semt=ais_hybrid");
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  position: absolute;
+  transform: rotateZ(-5deg);
+}
+
+.paper.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  /* border-radius: 50%; */
+  background-size: cover;
+}
+
+.paper.image {
+  padding: 10px;
+  max-width: 300px; /* Adjust as needed */
+  margin: 20px auto; /* Center the paper */
+}
+
+.paper.image p {
+  font-size: 25px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Maintain aspect ratio */
+  max-height: 200px; /* Adjust the maximum height */
+  user-select: none;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+.paper.heart::after {
+  content: "";
+  background-image: url('https://thumbs.dreamstime.com/b/big-cartoon-birthday-cake-15734945.jpg');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+p {
+  font-family: 'Zeyada', cursive;
+  font-size: 40px;
+  color: rgb(0,0,100);
+  opacity: 0.75;
+  user-select: none;
+  filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
+  text-align: center;
+}
